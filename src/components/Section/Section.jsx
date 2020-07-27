@@ -1,15 +1,16 @@
 import React from 'react';
 import eyecatch from "./catch.jpg";
 
-function Section() {
+function Section(props) {
+    // const img_src = require(props.img_src);
     return (
         <React.Fragment>
             <section>
                 <div className="text_box">
-                    <h2>React</h2>
-                    <p>Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.Reactは本当にすごい.</p>
+                    <h2>{props.ttl}</h2>
+                    <p>{props.text}</p>
                 </div>
-                <img src={eyecatch} alt="catch" />
+                <img src={props.img_src} alt="catch" />
             </section>
         </React.Fragment>
     );
